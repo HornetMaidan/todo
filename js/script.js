@@ -2,6 +2,7 @@ const button1 = document.querySelector('.add');
 const button2 = document.querySelector('.remove')
 const field = document.querySelector('.field');
 const div = document.querySelector('.div');
+const removefield = document.querySelector('.removeInput')
 let tasks = document.querySelector('.array')
 
 function createTask(value) {
