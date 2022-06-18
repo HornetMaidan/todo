@@ -17,8 +17,8 @@
     line-height: 36px;
 }
  body {
-     background-image: url("background.jpg");
-     background-size: cover;
+     background: radial-gradient(circle at center, #1d0544, black);
+     background-size: auto;
      text-align: center;
      text-space: 100px;
      text-shadow:  2px 2px 2px black;
