@@ -15,10 +15,10 @@
     box-sizing: border-box;
     font-size: 32px;
     font-family: "Droid Sans Mono Dotted", sans-serif;
-    line-height: 36px;
+    line-height: 10px;
 }
  body {
-     background: radial-gradient(circle at center, #1d0544, black);
+     background: radial-gradient(circle at center, #1d0544, black) center;
      background-size: auto;
      text-align: center;
      text-space: 100px;

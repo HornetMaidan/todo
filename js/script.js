@@ -6,7 +6,9 @@ let tasks = document.querySelector('.array')
 
 function createTask(value) {
     const task = document.createElement("div");
-    task.textContent = value;
+    let d = new Date();
+    let d1 = d.getHours().toString() + ':' + d.getMinutes().toString();
+    task.textContent = value + ' ------- ' + d1;
     return task;
 }
 function addTask() {
@@ -35,6 +37,12 @@ function buttonPressRemove() {
         removeTask()
     }
 }
+function getTimeNow() {
+    let currentTime = (new Date()).toLocaleTimeString();
+    document.getElementById('clock').innerHTML = `время:   ${currentTime}`;
+}
+
+setInterval(function(){  getTimeNow() }, 1000);
 
 button1.addEventListener('click', addTask);
 field.addEventListener('keydown', buttonPressAdd, buttonPressRemove);
