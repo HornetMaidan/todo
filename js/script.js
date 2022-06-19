@@ -6,9 +6,7 @@ let tasks = document.querySelector('.array')
 
 function createTask(value) {
     const task = document.createElement("div");
-    let d = new Date();
-    let d1 = d.getHours().toString() + ':' + d.getMinutes().toString();
-    task.textContent = value + ' ------- ' + d1;
+    task.textContent = value + ' ------- ' + (new Date()).toLocaleTimeString();
     return task;
 }
 function addTask() {
