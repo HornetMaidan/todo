@@ -2,11 +2,12 @@
     border-color: black;
     font-size: 30px;
     margin-top: 56px;
-    background-color: #4d4848;
+    background-color: #412b72;
     border-style: hidden;
     border-radius: 90px;
     text-align: center;
     width: 1000px;
+    box-shadow: #15081c 2px 2px 2px 3px;
 }
 
 .block {
@@ -24,6 +25,10 @@
      text-shadow:  2px 2px 2px black;
      color: #adadad;
  }
+ .link {
+     color: greenyellow;
+     text-shadow: black 2px 2px 2px 2px;
+ }
 
  .control {
      text-align: center;
@@ -34,6 +39,7 @@
      background-color: #a9ea6a;
      border-style: hidden;
      border-radius: 90px;
+     box-shadow: #15081c 2px 2px 2px 3px;
  }
 
  .remove {
@@ -42,4 +48,5 @@
      background-color: #99413b;
      border-style: hidden;
      border-radius: 90px;
+     box-shadow: #15081c 2px 2px 2px 3px;
  }
