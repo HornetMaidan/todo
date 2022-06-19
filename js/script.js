@@ -2,7 +2,6 @@ const button1 = document.querySelector('.add');
 const button2 = document.querySelector('.remove')
 const field = document.querySelector('.field');
 const div = document.querySelector('.div');
-const removefield = document.querySelector('.removeInput')
 let tasks = document.querySelector('.array')
 
 function createTask(value) {
@@ -25,8 +24,9 @@ function buttonPressAdd() {
 }
 
 function removeTask() {
+    let deltask = prompt('номер таски для удаления:');
     if (tasks.hasChildNodes()) {
-        tasks.removeChild(tasks.lastChild)
+        tasks.removeChild(tasks.children[deltask - 1])
     }
 }
 
